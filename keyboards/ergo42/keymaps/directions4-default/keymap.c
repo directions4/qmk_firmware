@@ -21,14 +21,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+-----------|   |-----------|------+------+------+------+------+------|
    * | META | SYMB |   Z  |   X  |   C  |   V  |  B        |   |  N        |   M  |   ,  |   .  |   /  |   (  |   )  |
    * |------+------+------+------+------+------+-----------|   |-----------+------+------+------+------+------+------|
-   * | META | SYMB |   `  |   \  | LAlt | LGUI |Space/shift|   |Space/shift|R_GUI | RAlt |   '  |  -   |   =  | APP  |
+   * | META | SYMB |   `  |   \  | LAlt | LGUI |Space/shift|   |Space/shift|R_GUI | RAlt |   '  |  -   |   =  | SYMB |
    * `-----------------------------------------------------'   `-----------------------------------------------------'
    */
   [BASE] = LAYOUT( \
     KC_ESC,   KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,     KC_T,          KC_Y,          KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC,  KC_BSPC, \
     KC_LSFT,  KC_LCTL,  KC_A,   KC_S,    KC_D,    KC_F,     KC_G,          KC_H,          KC_J,    KC_K,    KC_L,    KC_SCLN, KC_RBRC,  KC_ENT, \
     MO(META), MO(SYMB), KC_Z,   KC_X,    KC_C,    KC_V,     KC_B,          KC_N,          KC_M,    KC_COMM, KC_DOT,  KC_SLSH, S(KC_9),  S(KC_0), \
-    TG(META), TG(SYMB), KC_GRV, KC_BSLS, KC_LALT, KC_LGUI,  SFT_T(KC_SPC), SFT_T(KC_SPC), KC_RGUI, KC_RALT, KC_QUOT, KC_MINS, KC_EQL,   KC_APP \
+    TG(META), TG(SYMB), KC_GRV, KC_BSLS, KC_LALT, KC_LGUI,  SFT_T(KC_SPC), SFT_T(KC_SPC), KC_RGUI, KC_RALT, KC_QUOT, KC_MINS, KC_EQL,   MO(SYMB) \
   ),
 
   /* META
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
    * | META | SYMB |  F3  |  F4  |  F5  |  F6  | HOME |   | END  |  F7  |  F8  |  F9  | F10  | F11  | F12  |
    * |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-   * | META | SYMB |   `  |   \  | LAlt | LGUI |Space |   |Space | RGUI | RAlt |  '   |  -   |  =   | APP  |
+   * | META | SYMB |   `  |   \  | LAlt | LGUI |Space |   |Space | RGUI | RAlt |  '   |  -   |  =   | SYMB |
    * `------------------------------------------------'   `------------------------------------------------'
    */
   [META] = LAYOUT( \
